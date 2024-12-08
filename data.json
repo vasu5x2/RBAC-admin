@@ -1,0 +1,114 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "role": "Admin",
+        "status": "Active"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "role": "Editor",
+        "status": "Inactive"
+      },
+      {
+        "id": 3,
+        "name": "Alice Johnson",
+        "email": "alice.johnson@example.com",
+        "role": "Viewer",
+        "status": "Active"
+      },
+      {
+        "id": 4,
+        "name": "Bob Brown",
+        "email": "bob.brown@example.com",
+        "role": "Admin",
+        "status": "Active"
+      },
+      {
+        "id": 5,
+        "name": "Charlie Green",
+        "email": "charlie.green@example.com",
+        "role": "Editor",
+        "status": "Active"
+      },
+      {
+        "id": 6,
+        "name": "Diana Blue",
+        "email": "diana.blue@example.com",
+        "role": "Viewer",
+        "status": "Inactive"
+      },
+      {
+        "id": 7,
+        "name": "Ella Black",
+        "email": "ella.black@example.com",
+        "role": "Admin",
+        "status": "Active"
+      },
+      {
+        "id": 8,
+        "name": "Frank White",
+        "email": "frank.white@example.com",
+        "role": "Editor",
+        "status": "Active"
+      },
+      {
+        "id": 9,
+        "name": "Grace Silver",
+        "email": "grace.silver@example.com",
+        "role": "Viewer",
+        "status": "Active"
+      },
+      {
+        "id": 10,
+        "name": "Hank Gold",
+        "email": "hank.gold@example.com",
+        "role": "Admin",
+        "status": "Inactive"
+      }
+    ],
+    "roles": [
+      {
+        "id": 1,
+        "name": "Admin",
+        "permissions": ["Read", "Write", "Delete", "Manage Roles"]
+      },
+      {
+        "id": 2,
+        "name": "Editor",
+        "permissions": ["Read", "Write"]
+      },
+      {
+        "id": 3,
+        "name": "Viewer",
+        "permissions": ["Read"]
+      }
+    ],
+    "permissions": [
+      {
+        "id": 1,
+        "name": "Read",
+        "description": "Allows viewing of resources."
+      },
+      {
+        "id": 2,
+        "name": "Write",
+        "description": "Allows creation and modification of resources."
+      },
+      {
+        "id": 3,
+        "name": "Delete",
+        "description": "Allows deletion of resources."
+      },
+      {
+        "id": 4,
+        "name": "Manage Roles",
+        "description": "Allows assigning and editing roles and permissions."
+      }
+    ]
+  }
+  
