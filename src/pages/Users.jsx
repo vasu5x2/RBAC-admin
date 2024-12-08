@@ -25,12 +25,12 @@ import AddIcon from "@mui/icons-material/Add";
 const Users = () => {
   const [data, setData] = useState({ users: [] });
   const [openDialog, setOpenDialog] = useState(false);
-  const [dialogType, setDialogType] = useState(""); // 'Add', 'Edit', 'Delete'
+  const [dialogType, setDialogType] = useState(""); 
   const [selectedUser, setSelectedUser] = useState({});
   const theme = useTheme();
 
   useEffect(() => {
-    // Simulate fetch from API
+
     fetch("/data.json")
       .then((response) => response.json())
       .then((json) => setData(json));
@@ -60,7 +60,7 @@ const Users = () => {
       setData((prevData) => ({
         users: [
           ...prevData.users,
-          { ...selectedUser, id: Date.now() }, // Generate a unique ID
+          { ...selectedUser, id: Date.now() }, 
         ],
       }));
     } else if (dialogType === "Edit") {

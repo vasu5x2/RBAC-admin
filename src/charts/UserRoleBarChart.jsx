@@ -6,34 +6,34 @@ const UserRoleBarChart = () => {
   const [roleData, setRoleData] = useState([]);
 
   useEffect(() => {
-    // Fetching data from the local data.json file
+  
     fetch("/data.json")
       .then((response) => response.json())
       .then((json) => {
         const { users } = json;
         
-        // Initialize the count for each role
+      
         const rolesCount = {
           Admin: 0,
           Editor: 0,
           Viewer: 0,
         };
 
-        // Count the number of users for each role
+       
         users.forEach((user) => {
           if (user.role === "Admin") rolesCount.Admin++;
           if (user.role === "Editor") rolesCount.Editor++;
           if (user.role === "Viewer") rolesCount.Viewer++;
         });
 
-        // Prepare data for the chart
+       
         const chartData = [
           { name: "Admin", count: rolesCount.Admin },
           { name: "Editor", count: rolesCount.Editor },
           { name: "Viewer", count: rolesCount.Viewer },
         ];
 
-        setRoleData(chartData); // Set the role data for rendering
+        setRoleData(chartData); 
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);

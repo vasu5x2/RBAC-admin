@@ -27,13 +27,13 @@ const UserStatusPieChart = () => {
       });
   }, []);
 
-  // Prepare pie chart data
+
   const pieData = Object.keys(statusCounts).map((status) => ({
     name: status,
     value: statusCounts[status]
   }));
 
-  // Define colors for each section
+
   const COLORS = ["#0088FE", "#FF8042"];
 
   return (

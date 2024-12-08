@@ -1,13 +1,13 @@
 import React, { createContext, useMemo, useState, useContext } from 'react';
 import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 
-// Create the context
+
 const ThemeContext = createContext();
 
-// Custom hook for consuming the context
+
 export const useThemeContext = () => useContext(ThemeContext);
 
-// ThemeProvider component
+
 export const CustomThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
 

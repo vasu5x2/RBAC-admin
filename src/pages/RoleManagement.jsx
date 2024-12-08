@@ -94,7 +94,7 @@ const RoleManagement = () => {
         </Card>
       ))}
 
-      {/* Dialog for Add/Edit Role */}
+    
       <Dialog open={openDialog} onClose={handleDialogClose}>
         <DialogTitle>{dialogType} Role</DialogTitle>
         <DialogContent>
