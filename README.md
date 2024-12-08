@@ -34,3 +34,21 @@ Make sure you have the following installed:
 
    ```bash
    git clone https://github.com/vasu5x2/RBAC-admin.git
+
+   ## Screenshots
+ ### Home 
+![Home Page](./src/assets/1.png)
+### User 
+![Users](./src/assets/2.png)
+
+###Role Distribution
+![Role Management](./src/assets/3.png)
+
+### Feature 4
+![Feature 1](./src/assets/4.png)
+
+### Feature 5
+![Feature 2](./src/assets/5.png)
+
+### Feature 6
+![Feature 3](./src/assets/6.png)
